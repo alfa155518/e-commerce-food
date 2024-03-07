@@ -5,7 +5,7 @@ function App() {
   return (
     <ContextProducts>
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </ContextProducts>
   );
