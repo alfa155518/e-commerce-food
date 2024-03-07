@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/e-commerce-food/static/css/main.82b9e557.css",
+    "main.js": "/e-commerce-food/static/js/main.c534bfa9.js",
+    "static/media/category-3.gif": "/e-commerce-food/static/media/category-3.e2149a4c6b737d9af1c2.gif",
+    "static/media/category-2.gif": "/e-commerce-food/static/media/category-2.b79407027d641bbd3248.gif",
+    "static/media/category-1.gif": "/e-commerce-food/static/media/category-1.3ef4842d57581b36a0a4.gif",
+    "static/media/category-5.gif": "/e-commerce-food/static/media/category-5.f5474eebec0ffd730c5e.gif",
+    "static/media/category-4.gif": "/e-commerce-food/static/media/category-4.39d102f3837a26f254fa.gif",
+    "static/media/home-page-slide-1.jpg": "/e-commerce-food/static/media/home-page-slide-1.350256ff658b672a1669.jpg",
+    "static/media/logo.svg": "/e-commerce-food/static/media/logo.312c90ddea629dd64ff6fc506a5f3e6c.svg",
+    "index.html": "/e-commerce-food/index.html",
+    "main.82b9e557.css.map": "/e-commerce-food/static/css/main.82b9e557.css.map",
+    "main.c534bfa9.js.map": "/e-commerce-food/static/js/main.c534bfa9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82b9e557.css",
+    "static/js/main.c534bfa9.js"
+  ]
+}
