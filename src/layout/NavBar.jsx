@@ -1,12 +1,18 @@
 import "../sass/layout/navbar.css";
 import logo from "../images/logo.svg";
 import { IoSearchOutline } from "react-icons/io5";
-import { MdKeyboardArrowDown } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
+import { FaBarsStaggered } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 function NavBar() {
+  function showOrHideMenu() {
+    const allLinksMenu =
+      document.documentElement.querySelector(".second-nav .links");
+    allLinksMenu.classList.toggle("active-menu");
+  }
+
   return (
     <nav>
       <div className="logo">
@@ -15,10 +21,7 @@ function NavBar() {
         </Link>
       </div>
       <form>
-        <span>
-          All Categories <MdKeyboardArrowDown />
-        </span>
-        <input type="text" />
+        <input type="text" placeholder="Search About Products" />
         <button>
           <IoSearchOutline />
         </button>
@@ -51,6 +54,9 @@ function NavBar() {
           </Link>
         </li>
       </ul>
+      <div className="bars" onClick={showOrHideMenu}>
+        <FaBarsStaggered />
+      </div>
     </nav>
   );
 }

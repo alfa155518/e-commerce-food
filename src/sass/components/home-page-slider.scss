@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   z-index: 1;
   position: relative;
   article {
@@ -49,6 +49,12 @@
         cursor: pointer;
         color: $whiteColor;
       }
+    }
+  }
+  // =========== Responsive All Screens ===========
+  @media (max-width: 572px) {
+    .subscribe {
+      display: none;
     }
   }
 }

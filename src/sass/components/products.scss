@@ -8,8 +8,7 @@
   align-items: start;
   .all-products {
     flex: 5;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    @include grid(200px);
     // Single Product
     .product {
       box-shadow: 0px 0px 3px 1px $wordsColor;
@@ -136,6 +135,10 @@
           text-transform: capitalize;
         }
       }
+    }
+    // ============== Responsive All Screens ============
+    @media (max-width: 772px) {
+      @include grid(180px);
     }
   }
 }

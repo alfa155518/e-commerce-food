@@ -152,4 +152,10 @@
   padding: 1px 13px;
   border-radius: 3px;
   text-transform: capitalize;
+}
+@media (max-width: 772px) {
+  .popular-products-container .all-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
 }/*# sourceMappingURL=products.css.map */

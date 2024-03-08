@@ -42,5 +42,10 @@ header .header-support li {
 header .header-support li .phone-number {
   color: #3bb77e;
 }
+@media (max-width: 1100px) {
+  header {
+    display: none;
+  }
+}
 
 /************ End Header ************//*# sourceMappingURL=header.css.map */

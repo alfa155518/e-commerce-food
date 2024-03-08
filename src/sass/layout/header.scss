@@ -43,6 +43,10 @@ header {
       }
     }
   }
+  // ============ Responsive All Screens =============
+  @media (max-width: 1100px) {
+    display: none;
+  }
 }
 
 /************ End Header ************/

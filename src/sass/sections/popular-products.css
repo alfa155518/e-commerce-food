@@ -2,7 +2,6 @@
 .container-section {
   padding: 80px 20px;
   /*============= Start Categories Name Nav ============*/
-  /*============= Start Categories Name Nav ============*/
 }
 .container-section .categories-name {
   display: flex;
@@ -54,5 +53,10 @@
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
-
-/******** End Popular Products *********//*# sourceMappingURL=popular-products.css.map */
+@media (max-width: 572px) {
+  .container-section .categories-name,
+  .container-section ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}/*# sourceMappingURL=popular-products.css.map */

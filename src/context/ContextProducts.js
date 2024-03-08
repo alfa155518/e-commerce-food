@@ -48,6 +48,7 @@ function ContextProducts({ children }) {
         showProductsByPrice,
         pricesRange,
         setPricesRange,
+        productData,
       }}>
       {children}
     </PopularProductsContext.Provider>

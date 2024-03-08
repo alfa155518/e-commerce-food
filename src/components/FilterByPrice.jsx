@@ -2,23 +2,24 @@ import { useContext } from "react";
 import { PopularProductsContext } from "../context/ContextProducts";
 
 function FilterByPrice() {
-  const { showProductsByPrice } = useContext(PopularProductsContext);
+  const { showProductsByPrice, pricesRange } = useContext(
+    PopularProductsContext
+  );
 
   return (
     <div className="filter-by-price">
-      <h3>Filter By Prices</h3>
+      <h3 className="category-name">Filter By Prices</h3>
       <div className="ranges">
         <form>
           <input
             type="range"
-            // min={10}
             max={1000}
             step={10}
             onChange={(e) => showProductsByPrice(e.target.value)}
           />
           <div className="prices">
             <span>from:$10</span>
-            <span>to:$1000</span>
+            <span>to:${pricesRange ? pricesRange : 0}</span>
           </div>
 
           <div className="colors">

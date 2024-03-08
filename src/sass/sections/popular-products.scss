@@ -41,7 +41,11 @@
       }
     }
   }
-  /*============= Start Categories Name Nav ============*/
+  @media (max-width: 572px) {
+    .categories-name,
+    ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }
-
-/******** End Popular Products *********/

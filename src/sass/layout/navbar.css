@@ -8,24 +8,10 @@ nav {
   box-shadow: 0px 2px 6px -2px #aaa;
 }
 nav .logo img {
-  max-width: 100%;
+  max-width: 140px;
 }
 nav form {
   position: relative;
-}
-nav form span {
-  position: relative;
-  top: 24px;
-  left: 3px;
-}
-nav form span::before {
-  position: absolute;
-  width: 2px;
-  height: 23px;
-  background-color: #3bb77e;
-  content: "";
-  top: 0px;
-  right: 0px;
 }
 nav form input {
   width: 100%;
@@ -46,6 +32,7 @@ nav .actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin: 10px;
 }
 nav .actions li {
   padding: 5px;
@@ -67,6 +54,33 @@ nav .actions li a .number {
 nav .actions li a span {
   font-weight: bold;
   font-size: 23px;
+}
+nav .bars {
+  color: #3bb77e;
+  font-size: 23px;
+  cursor: pointer;
+  margin: 10px;
+  z-index: 10;
+  display: none;
+}
+@media (max-width: 991px) {
+  nav form {
+    display: none;
+  }
+  nav .bars {
+    display: block;
+  }
+}
+@media (max-width: 642px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .actions {
+    flex-direction: column;
+  }
+  nav .bars {
+    padding-top: 30px;
+  }
 }
 
 /* End Nav Bar *//*# sourceMappingURL=navbar.css.map */

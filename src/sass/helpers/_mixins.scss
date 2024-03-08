@@ -24,3 +24,9 @@
   -ms-transform: translate($x, $y);
   -o-transform: translate($x, $y);
 }
+
+// Grid System
+@mixin grid($size) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($size, 1fr));
+}
