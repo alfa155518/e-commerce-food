@@ -1,20 +1,44 @@
 {
   "files": {
-    "main.css": "/e-commerce-food/static/css/main.82b9e557.css",
-    "main.js": "/e-commerce-food/static/js/main.daff3c5d.js",
+    "main.css": "/e-commerce-food/static/css/main.bd9190e0.css",
+    "main.js": "/e-commerce-food/static/js/main.9955b2b0.js",
     "static/media/category-3.gif": "/e-commerce-food/static/media/category-3.e2149a4c6b737d9af1c2.gif",
     "static/media/category-2.gif": "/e-commerce-food/static/media/category-2.b79407027d641bbd3248.gif",
     "static/media/category-1.gif": "/e-commerce-food/static/media/category-1.3ef4842d57581b36a0a4.gif",
     "static/media/category-5.gif": "/e-commerce-food/static/media/category-5.f5474eebec0ffd730c5e.gif",
     "static/media/category-4.gif": "/e-commerce-food/static/media/category-4.39d102f3837a26f254fa.gif",
     "static/media/home-page-slide-1.jpg": "/e-commerce-food/static/media/home-page-slide-1.350256ff658b672a1669.jpg",
+    "static/media/newsletter.png": "/e-commerce-food/static/media/newsletter.408dd67727d7405d04a0.png",
+    "static/media/slide-10.png": "/e-commerce-food/static/media/slide-10.6fd72b3bb217c1e55169.png",
+    "static/media/slide-9.png": "/e-commerce-food/static/media/slide-9.3a5c2e31df10a9b9dbb1.png",
+    "static/media/slide-2.png": "/e-commerce-food/static/media/slide-2.c1306b3853f0655e7545.png",
+    "static/media/slide-1.png": "/e-commerce-food/static/media/slide-1.94c2bc7366708ebcf9ef.png",
+    "static/media/slide-3.png": "/e-commerce-food/static/media/slide-3.161a0515318f2e2efc81.png",
+    "static/media/app-store.jpg": "/e-commerce-food/static/media/app-store.ef349165dfaf884573a5.jpg",
+    "static/media/google-play.jpg": "/e-commerce-food/static/media/google-play.2a527ac3efc1ecb12a2d.jpg",
+    "static/media/thumbnail-1.jpg": "/e-commerce-food/static/media/thumbnail-1.030ea6a82a502a527bf2.jpg",
+    "static/media/bg.png": "/e-commerce-food/static/media/bg.56479838083707e4ffd6.png",
     "static/media/logo.svg": "/e-commerce-food/static/media/logo.312c90ddea629dd64ff6fc506a5f3e6c.svg",
+    "static/media/slide-8.png": "/e-commerce-food/static/media/slide-8.2d66c3edec5494eaa552.png",
+    "static/media/slide-4.png": "/e-commerce-food/static/media/slide-4.f719300cf1d7bbf4b300.png",
+    "static/media/slide-7.png": "/e-commerce-food/static/media/slide-7.c2e6f3c6bb30729f1c28.png",
+    "static/media/slide-6.png": "/e-commerce-food/static/media/slide-6.617edb12016588573345.png",
+    "static/media/thumbnail-3.jpg": "/e-commerce-food/static/media/thumbnail-3.a8ed4f655bb3677caf97.jpg",
+    "static/media/banner4.jpg": "/e-commerce-food/static/media/banner4.51364679caba6731ed07.jpg",
+    "static/media/slide-5.png": "/e-commerce-food/static/media/slide-5.15ba59d83419a793f748.png",
+    "static/media/thumbnail-2.jpg": "/e-commerce-food/static/media/thumbnail-2.048915ff1e96bdba4ee4.jpg",
+    "static/media/payment-method.png": "/e-commerce-food/static/media/payment-method.47ad3e696f50516da1b3.png",
+    "static/media/service-4.svg": "/e-commerce-food/static/media/service-4.622b96aa8375916171721496261f6986.svg",
+    "static/media/service-3.svg": "/e-commerce-food/static/media/service-3.5b1776e2a1d7ec897722f605a8118984.svg",
+    "static/media/service-1.svg": "/e-commerce-food/static/media/service-1.84d7a8a08622e302a2d50459d2cddb62.svg",
+    "static/media/service-2.svg": "/e-commerce-food/static/media/service-2.e85986742a6c5c3748db8c239b11dd57.svg",
+    "static/media/service-5.svg": "/e-commerce-food/static/media/service-5.a41b48d5c6678b96129a842057548c86.svg",
     "index.html": "/e-commerce-food/index.html",
-    "main.82b9e557.css.map": "/e-commerce-food/static/css/main.82b9e557.css.map",
-    "main.daff3c5d.js.map": "/e-commerce-food/static/js/main.daff3c5d.js.map"
+    "main.bd9190e0.css.map": "/e-commerce-food/static/css/main.bd9190e0.css.map",
+    "main.9955b2b0.js.map": "/e-commerce-food/static/js/main.9955b2b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.82b9e557.css",
-    "static/js/main.daff3c5d.js"
+    "static/css/main.bd9190e0.css",
+    "static/js/main.9955b2b0.js"
   ]
 }
