@@ -26,70 +26,70 @@ function ProductContent({ product }) {
         <h3>{product.productName}</h3>
         {product.rating === 5 && (
           <ul className="rating">
-            <div className="stars">
+            <li className="stars">
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
-            </div>
-            <em>({product.rating})</em>
+            </li>
+            <li>({product.rating})</li>
           </ul>
         )}
         {product.rating === 4.5 && (
           <ul className="rating">
-            <div className="stars">
+            <li className="stars">
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStarHalf className="half-star" />
-            </div>
-            <em>({product.rating})</em>
+            </li>
+            <li>({product.rating})</li>
           </ul>
         )}
         {product.rating === 4 && (
           <ul className="rating">
-            <div className="stars">
+            <li className="stars">
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStarHalf className="half-star" />
-            </div>
-            <em>({product.rating})</em>
+            </li>
+            <li>({product.rating})</li>
           </ul>
         )}
         {product.rating === 3.5 && (
           <ul className="rating">
-            <div className="stars">
+            <li className="stars">
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStarHalf className="half-star" />
-            </div>
-            <em>({product.rating})</em>
+            </li>
+            <li>({product.rating})</li>
           </ul>
         )}
         {product.rating === 3 && (
           <ul className="rating">
-            <div className="stars">
+            <li className="stars">
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStarHalf className="half-star" />
-            </div>
-            <em>({product.rating})</em>
+            </li>
+            <li>({product.rating})</li>
           </ul>
         )}
         {product.rating === 0 && (
           <ul className="rating">
-            <div className="stars">
+            <li className="stars">
               <FaStar className="star" />
               <FaStar className="star" />
               <FaStarHalf className="half-star" />
-            </div>
-            <em>({product.rating})</em>
+            </li>
+            <li>({product.rating})</li>
           </ul>
         )}
         <h4 className="brand">By:{product.brand}</h4>

@@ -14,7 +14,7 @@ function Services() {
           <img src={serviceImg_1} alt="service-img" />
         </div>
         <div className="details">
-          <h4>Wide Assortment</h4>
+          <h5>Wide Assortment</h5>
           <span>Mega Discounts</span>
         </div>
       </div>
@@ -24,7 +24,7 @@ function Services() {
           <img src={serviceImg_2} alt="service-img" />
         </div>
         <div className="details">
-          <h4>Easy Returns</h4>
+          <h5>Easy Returns</h5>
           <span>Within 30 Days</span>
         </div>
       </div>
@@ -34,7 +34,7 @@ function Services() {
           <img src={serviceImg_3} alt="service-img" />
         </div>
         <div className="details">
-          <h4>Best Price & Offer</h4>
+          <h5>Best Price & Offer</h5>
           <span>Order $50 or More</span>
         </div>
       </div>
@@ -44,7 +44,7 @@ function Services() {
           <img src={serviceImg_4} alt="service-img" />
         </div>
         <div className="details">
-          <h4>Free Delivery</h4>
+          <h5>Free Delivery</h5>
           <span>24/7 Amazing Services</span>
         </div>
       </div>
@@ -54,7 +54,7 @@ function Services() {
           <img src={serviceImg_5} alt="service-img" />
         </div>
         <div className="details">
-          <h4>Great Daily Deal</h4>
+          <h5>Great Daily Deal</h5>
           <span>When You Sing up</span>
         </div>
       </div>

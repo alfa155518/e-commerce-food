@@ -14,7 +14,7 @@ function Categories() {
       {/* <h3>Categories</h3> */}
       <div className="container-name">
         <ul className="categories-name">
-          <h3 className="category-name">Categories</h3>
+          <li className="category-name">Categories</li>
           <li>
             <img src={imgOne} alt="category-img" />
             <span className="name">Foods</span>

@@ -20,11 +20,10 @@ function Footer() {
       <footer>
         <ul className="wrapper-links">
           <ul className="links">
-            <h2 className="category">
+            <li className="category">
               <img src={logo} alt="logo-img" />
-            </h2>
-            <p>Awesome grocery store website template</p>
-            <br />
+              <p>Awesome grocery store website template</p>
+            </li>
             <li>
               <FaLocationDot />
               <strong>
@@ -46,7 +45,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="links">
-            <h2 className="category">Company</h2>
+            <li className="category">Company</li>
             <li>
               <Link to={"#"}>About Us</Link>
             </li>
@@ -70,7 +69,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="links">
-            <h2 className="category">Account</h2>
+            <li className="category">Account</li>
             <li>
               <Link to={"#"}>Account</Link>
             </li>
@@ -94,7 +93,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="links">
-            <h2 className="category">Corporate</h2>
+            <li className="category">Corporate</li>
             <li>
               <Link to={"#"}>Economy Vendor</Link>
             </li>
@@ -118,7 +117,7 @@ function Footer() {
             </li>
           </ul>
           <ul className="links">
-            <h2 className="category">Popular</h2>
+            <li className="category">Popular</li>
             <li>
               <Link to={"#"}>Bean</Link>
             </li>
@@ -142,9 +141,8 @@ function Footer() {
             </li>
           </ul>
           <ul className="links">
-            <h2 className="category">Install App</h2>
-            <p>From App Store or Google Play</p>
-            <br />
+            <li className="category">Install App</li>
+            <li>From App Store or Google Play</li>
             <li>
               <img src={downloadImg_1} alt="playStore-img" />
               <img src={downloadImg_2} alt="GogglePlay-img" />

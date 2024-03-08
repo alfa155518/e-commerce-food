@@ -11,19 +11,21 @@ function FilterByPrice() {
       <h3 className="category-name">Filter By Prices</h3>
       <div className="ranges">
         <form>
-          <input
-            type="range"
-            max={1000}
-            step={10}
-            onChange={(e) => showProductsByPrice(e.target.value)}
-          />
+          <label htmlFor="range-element">
+            <input
+              type="range"
+              max={1000}
+              step={10}
+              onChange={(e) => showProductsByPrice(e.target.value)}
+            />
+          </label>
           <div className="prices">
             <span>from:$10</span>
             <span>to:${pricesRange ? pricesRange : 0}</span>
           </div>
 
           <div className="colors">
-            <h5>Color</h5>
+            <h4>Color</h4>
 
             <div className="box">
               <input type="checkbox" id="one" />
@@ -43,18 +45,18 @@ function FilterByPrice() {
           <div className="collections">
             <h5>Items Collections</h5>
             <div className="items">
-              <input type="checkbox" id="one" />
-              <label htmlFor="one">New(560)</label>
+              <input type="checkbox" id="four" />
+              <label htmlFor="four">New(560)</label>
             </div>
 
             <div className="items">
-              <input type="checkbox" id="tow" />
-              <label htmlFor="tow">Used(1000)</label>
+              <input type="checkbox" id="five" />
+              <label htmlFor="five">Used(1000)</label>
             </div>
 
             <div className="items">
-              <input type="checkbox" id="three" />
-              <label htmlFor="three">Returned(90)</label>
+              <input type="checkbox" id="six" />
+              <label htmlFor="six">Returned(90)</label>
             </div>
           </div>
         </form>

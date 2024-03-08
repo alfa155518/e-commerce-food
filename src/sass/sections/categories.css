@@ -22,7 +22,7 @@
 .categories .container-name .categories-name {
   display: block;
 }
-.categories .container-name .categories-name li {
+.categories .container-name .categories-name li:not(:first-child) {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,17 +35,17 @@
   -ms-transition: 0.7s ease-in-out;
   -o-transition: 0.7s ease-in-out;
 }
-.categories .container-name .categories-name li:hover {
+.categories .container-name .categories-name li:not(:first-child):hover {
   box-shadow: 0px 0px 3px 1px #3bb77e;
   scale: 0.9;
 }
-.categories .container-name .categories-name li img {
+.categories .container-name .categories-name li:not(:first-child) img {
   width: 50px;
 }
-.categories .container-name .categories-name li .name {
+.categories .container-name .categories-name li:not(:first-child) .name {
   color: #555;
 }
-.categories .container-name .categories-name li .number {
+.categories .container-name .categories-name li:not(:first-child) .number {
   background-color: #3bb77e;
   padding: 1px 5px;
   color: #fff;
@@ -69,8 +69,8 @@
   font-weight: bold;
   font-size: 17px;
 }
-.categories .filter-by-price .ranges form .colors h5,
-.categories .filter-by-price .ranges form .collections h5 {
+.categories .filter-by-price .ranges form .colors h4,
+.categories .filter-by-price .ranges form .collections h4 {
   color: #555;
   font-size: 16px;
   margin-bottom: 5px;

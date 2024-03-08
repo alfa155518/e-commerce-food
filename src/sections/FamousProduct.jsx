@@ -15,7 +15,7 @@ function FamousProduct() {
     <section className="famous-product">
       {productData.productData[0].items.slice(0, 4).map((allProducts, i) => (
         <ul key={i} className="list-items">
-          {<h2 className="category-name">{allProducts.category}</h2>}
+          {<li className="category-name">{allProducts.category}</li>}
           {allProducts.products.slice(0, 3).map((product) => (
             <li key={product.id} className="item">
               <ProductContent product={product} key={product.id} />
