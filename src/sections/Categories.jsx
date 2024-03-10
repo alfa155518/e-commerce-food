@@ -5,13 +5,11 @@ import imgThree from "../images/category-3.gif";
 import imgFour from "../images/category-4.gif";
 import imgFive from "../images/category-5.gif";
 import FilterByPrice from "../components/FilterByPrice";
-
 import NewProductsCategory from "../components/NewProductsCategory";
 import Advertisement from "../components/Advertisement";
 function Categories() {
   return (
     <aside className="categories">
-      {/* <h3>Categories</h3> */}
       <div className="container-name">
         <ul className="categories-name">
           <li className="category-name">Categories</li>
@@ -42,7 +40,11 @@ function Categories() {
           </li>
         </ul>
       </div>
-      <FilterByPrice />
+      {window.location.pathname === "/e-commerce-food/product-info" ? (
+        ""
+      ) : (
+        <FilterByPrice />
+      )}
       <NewProductsCategory />
       <Advertisement />
     </aside>

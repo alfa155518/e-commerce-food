@@ -67,6 +67,8 @@ nav .bars {
   nav form {
     display: none;
   }
+}
+@media (max-width: 800px) {
   nav .bars {
     display: block;
   }

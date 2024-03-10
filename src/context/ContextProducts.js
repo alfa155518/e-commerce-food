@@ -3,9 +3,14 @@ import productData from "../data/db.json";
 
 export const PopularProductsContext = createContext();
 function ContextProducts({ children }) {
-  const [containerData, setContainerData] = useState(productData);
+  // all Data
+  const [containerData] = useState(productData);
+  // All Product Data
   const [data, setData] = useState(...[productData]);
+  // Categories Data
   const [categoriesData] = useState(...[productData]);
+  // State Of Product Information
+  const [productInfo, setProductInfo] = useState("");
 
   let [pricesRange, setPricesRange] = useState(null);
 
@@ -37,6 +42,11 @@ function ContextProducts({ children }) {
     setPricesRange(price);
     setData(filteredByPrice);
   }
+
+  function getProductInfo(product) {
+    setProductInfo(product);
+  }
+
   return (
     <PopularProductsContext.Provider
       value={{
@@ -49,6 +59,8 @@ function ContextProducts({ children }) {
         pricesRange,
         setPricesRange,
         productData,
+        getProductInfo,
+        productInfo,
       }}>
       {children}
     </PopularProductsContext.Provider>

@@ -1,14 +1,14 @@
-import HomePageSLider from "../../sections/HomePageSLider";
-import MainHeader from "../../layout/MainHeader";
-import NavBar from "../../layout/NavBar";
-import SecondNav from "../../layout/SecondNav";
-import PopularProducts from "../../sections/PopularProducts";
-import SliderCategory from "../../sections/SliderCategory";
-import FamousProduct from "../../sections/FamousProduct";
-import NewsLetter from "../../sections/NewsLetter";
-import Services from "../../sections/Services";
-import Footer from "../../layout/Footer";
-import ScrollToTop from "../../components/ScrollToTop";
+import HomePageSLider from "../sections/HomePageSLider";
+import MainHeader from "../layout/MainHeader";
+import NavBar from "../layout/NavBar";
+import SecondNav from "../layout/SecondNav";
+import PopularProducts from "../sections/PopularProducts";
+import SliderCategory from "../sections/SliderCategory";
+import FamousProduct from "../sections/FamousProduct";
+import NewsLetter from "../sections/NewsLetter";
+import Services from "../sections/Services";
+import Footer from "../layout/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Home() {
   return (

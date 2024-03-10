@@ -1,97 +1,40 @@
-import { FaStar } from "react-icons/fa6";
-import { FaStarHalf } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { PopularProductsContext } from "../context/ContextProducts";
+import CalcRatingProduct from "./CalcRatingProduct";
 
 function ProductContent({ product }) {
+  const { getProductInfo } = useContext(PopularProductsContext);
+
   // Products Content Component
   return (
     <div className="product p-relative">
       <ul className="actions">
         <li>
-          <FaHeart />
+          <Link to={"favorite"}>
+            <FaHeart />
+          </Link>
+        </li>
+        <li onClick={() => getProductInfo(product)}>
+          <Link to={"product-info"}>
+            <FaEye />
+          </Link>
         </li>
         <li>
-          <FaEye />
-        </li>
-        <li>
-          <FaCartShopping />
+          <Link to={"shopping"}>
+            <FaCartShopping />
+          </Link>
         </li>
       </ul>
       <span className="discount p-absolute">discount:{product.discount}%</span>
       <img src={product.catImg} alt="product-img" loading="lazy" />
       <div className="info">
         <h3>{product.productName}</h3>
-        {product.rating === 5 && (
-          <ul className="rating">
-            <li className="stars">
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-            </li>
-            <li>({product.rating})</li>
-          </ul>
-        )}
-        {product.rating === 4.5 && (
-          <ul className="rating">
-            <li className="stars">
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStarHalf className="half-star" />
-            </li>
-            <li>({product.rating})</li>
-          </ul>
-        )}
-        {product.rating === 4 && (
-          <ul className="rating">
-            <li className="stars">
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStarHalf className="half-star" />
-            </li>
-            <li>({product.rating})</li>
-          </ul>
-        )}
-        {product.rating === 3.5 && (
-          <ul className="rating">
-            <li className="stars">
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStarHalf className="half-star" />
-            </li>
-            <li>({product.rating})</li>
-          </ul>
-        )}
-        {product.rating === 3 && (
-          <ul className="rating">
-            <li className="stars">
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStarHalf className="half-star" />
-            </li>
-            <li>({product.rating})</li>
-          </ul>
-        )}
-        {product.rating === 0 && (
-          <ul className="rating">
-            <li className="stars">
-              <FaStar className="star" />
-              <FaStar className="star" />
-              <FaStarHalf className="half-star" />
-            </li>
-            <li>({product.rating})</li>
-          </ul>
-        )}
+        <CalcRatingProduct product={product} />
         <h4 className="brand">By:{product.brand}</h4>
       </div>
       <div className="prices">
