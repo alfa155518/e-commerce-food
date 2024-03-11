@@ -1,24 +1,25 @@
 /******** Start Popular Products *********/
 .container-section {
   padding: 80px 20px;
-  /*============= Start Categories Name Nav ============*/
 }
-.container-section .categories-name {
+
+/*============= Start Categories Name Nav ============*/
+.categories-name {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.container-section .categories-name h3 {
+.categories-name h3 {
   color: #3bb77e;
   font-size: 30px;
   font-weight: 800;
   padding: 15px;
   cursor: pointer;
 }
-.container-section .categories-name ul {
+.categories-name ul {
   display: flex;
 }
-.container-section .categories-name ul li {
+.categories-name ul li {
   cursor: pointer;
   text-transform: capitalize;
   color: #555;
@@ -26,7 +27,7 @@
   padding: 5px;
   margin: 5px;
 }
-.container-section .categories-name ul li::after {
+.categories-name ul li::after {
   position: absolute;
   width: 0px;
   height: 3px;
@@ -45,7 +46,7 @@
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
-.container-section .categories-name ul li:hover::after {
+.categories-name ul li:hover::after {
   width: 60px;
   transition: 1s ease-in-out;
   -webkit-transition: 1s ease-in-out;
@@ -53,9 +54,10 @@
   -ms-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
 }
+
 @media (max-width: 572px) {
-  .container-section .categories-name,
-  .container-section ul {
+  .categories-name,
+  ul {
     flex-direction: column;
     text-align: center;
   }

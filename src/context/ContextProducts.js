@@ -61,6 +61,7 @@ function ContextProducts({ children }) {
         productData,
         getProductInfo,
         productInfo,
+        containerData,
       }}>
       {children}
     </PopularProductsContext.Provider>

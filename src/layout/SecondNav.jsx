@@ -17,6 +17,9 @@ function SecondNav() {
           <NavLink to="/shop">Shop</NavLink>
         </li>
         <li>
+          <NavLink to="/cart-page">Cart</NavLink>
+        </li>
+        <li>
           <NavLink to="/blog">Blog</NavLink>
         </li>
         <li>

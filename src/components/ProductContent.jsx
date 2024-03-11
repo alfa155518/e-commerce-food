@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { PopularProductsContext } from "../context/ContextProducts";
 import CalcRatingProduct from "./CalcRatingProduct";
+import { CartContainerContext } from "../context/CartContext";
 
 function ProductContent({ product }) {
   const { getProductInfo } = useContext(PopularProductsContext);
+  const { addToCart } = useContext(CartContainerContext);
 
   // Products Content Component
   return (
@@ -20,12 +22,12 @@ function ProductContent({ product }) {
           </Link>
         </li>
         <li onClick={() => getProductInfo(product)}>
-          <Link to={"product-info"}>
+          <Link to={"/product-info"}>
             <FaEye />
           </Link>
         </li>
         <li>
-          <Link to={"shopping"}>
+          <Link to={"/"} onClick={() => addToCart(product)}>
             <FaCartShopping />
           </Link>
         </li>

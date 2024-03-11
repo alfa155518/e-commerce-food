@@ -8,7 +8,7 @@ function FilterProductByPrice() {
   // Show Filtered Products By Pricing
   return (
     pricesRange !== null &&
-    data?.[0]?.map((allProducts, i) =>
+    data?.[0]?.map((allProducts) =>
       allProducts.map((product) => (
         <ProductContent product={product} key={product.id} />
       ))

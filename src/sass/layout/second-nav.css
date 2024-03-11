@@ -82,7 +82,7 @@
   margin-bottom: 0;
   margin-left: 10px;
 }
-@media (max-width: 800px) {
+@media (max-width: 991px) {
   .second-nav .btn-categories,
   .second-nav .support {
     display: none;

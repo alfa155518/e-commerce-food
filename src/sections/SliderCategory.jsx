@@ -26,7 +26,13 @@ import { EffectCoverflow } from "swiper/modules";
 function SliderCategory() {
   return (
     <section className="slider-categories">
-      <h2 className="section-name category-name">Shop By Slider Categories</h2>
+      {window.location.pathname === "/e-commerce-food/shop" ? (
+        ""
+      ) : (
+        <h2 className="section-name category-name">
+          Shop By Slider Categories
+        </h2>
+      )}
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

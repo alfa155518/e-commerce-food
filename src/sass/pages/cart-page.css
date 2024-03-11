@@ -1,0 +1,75 @@
+.wrapper-cart table {
+  border-spacing: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.wrapper-cart table thead {
+  background-color: #3bb77e;
+  color: #fff;
+}
+.wrapper-cart table thead tr th {
+  padding: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.wrapper-cart table thead tr th .remove-product {
+  color: red;
+}
+.wrapper-cart table tbody tr {
+  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -ms-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+}
+.wrapper-cart table tbody tr:hover {
+  box-shadow: 0px 0px 5px 0px #3bb77e;
+  border-radius: 5px;
+  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.8s ease-in-out;
+  -moz-transition: 0.8s ease-in-out;
+  -ms-transition: 0.8s ease-in-out;
+  -o-transition: 0.8s ease-in-out;
+}
+.wrapper-cart table tbody tr td {
+  text-align: center;
+}
+.wrapper-cart table tbody tr td img {
+  max-width: 100px;
+}
+.wrapper-cart table tbody tr td .name {
+  color: #3bb77e;
+  font-size: 25px;
+  font-weight: bold;
+}
+.wrapper-cart table tbody tr td .price {
+  font-size: 25px;
+  font-weight: 800;
+  color: #3bb77e;
+}
+.wrapper-cart table tbody tr .actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 57px;
+}
+.wrapper-cart table tbody tr .actions .plus,
+.wrapper-cart table tbody tr .actions .minus {
+  box-shadow: 0px 0px 5px 0px #3bb77e;
+  padding: 3px;
+  color: #3bb77e;
+  cursor: pointer;
+}
+.wrapper-cart table tbody tr .actions .quantity {
+  box-shadow: 0px 0px 5px 0px green;
+  cursor: pointer;
+  padding: 3px;
+  color: green;
+  font-size: 25px;
+}
+.wrapper-cart table tbody tr .trash {
+  font-size: 25px;
+  color: red;
+  cursor: pointer;
+}/*# sourceMappingURL=cart-page.css.map */

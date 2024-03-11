@@ -1,0 +1,76 @@
+@use "../helpers/mixins" as *;
+@use "../helpers/variables" as *;
+
+.wrapper-cart {
+  table {
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    thead {
+      background-color: $mainColor;
+      color: $whiteColor;
+      tr {
+        th {
+          padding: 20px;
+          font-size: 20px;
+          letter-spacing: 1px;
+          .remove-product {
+            color: red;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        @include transition(0.8s, ease-in-out);
+        &:hover {
+          box-shadow: 0px 0px 5px 0px $mainColor;
+          border-radius: 5px;
+          @include transition(0.8s, ease-in-out);
+        }
+        td {
+          text-align: center;
+          img {
+            max-width: 100px;
+          }
+          .name {
+            color: $mainColor;
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .price {
+            font-size: 25px;
+            font-weight: 800;
+            color: $mainColor;
+          }
+        }
+        .actions {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin-top: 57px;
+          .plus,
+          .minus {
+            box-shadow: 0px 0px 5px 0px $mainColor;
+            padding: 3px;
+            color: $mainColor;
+            cursor: pointer;
+          }
+          .quantity {
+            box-shadow: 0px 0px 5px 0px green;
+            cursor: pointer;
+            padding: 3px;
+            color: green;
+            font-size: 25px;
+          }
+        }
+        .trash {
+          font-size: 25px;
+          color: red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
