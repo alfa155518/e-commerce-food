@@ -17,17 +17,17 @@ function ProductContent({ product }) {
     <div className="product p-relative">
       <ul className="actions">
         <li>
-          <Link to={"favorite"}>
+          <Link to={"favorite"} aria-label="favorite">
             <FaHeart />
           </Link>
         </li>
         <li onClick={() => getProductInfo(product)}>
-          <Link to={"/product-info"}>
+          <Link to={"/product-info"} aria-label="info">
             <FaEye />
           </Link>
         </li>
         <li>
-          <Link to={"/"} onClick={() => addToCart(product)}>
+          <Link to={"/"} onClick={() => addToCart(product)} aria-label="cart">
             <FaCartShopping />
           </Link>
         </li>
