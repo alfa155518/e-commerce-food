@@ -38,7 +38,7 @@ function ProductContent({ product }) {
       <div className="prices">
         <span className="old-price">${product.oldPrice}</span>
         <span className="new-price">${product.price}</span>
-        <span className="add-to-cart">
+        <span className="add-to-cart" onClick={() => addToCart(product)}>
           <IoCartOutline /> add
         </span>
       </div>
