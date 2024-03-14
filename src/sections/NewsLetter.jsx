@@ -15,9 +15,14 @@ function NewsLetter() {
         <strong>
           Start You`r Daily Shopping with <em>Ahmed Hassob</em>
         </strong>
-        <form>
-          <input type="email" placeholder="Your email address" />
-          <button>Subscribe</button>
+        <form id="subscribe">
+          <input
+            type="email"
+            name="subscribe"
+            placeholder="Your email address"
+            autoComplete="email"
+          />
+          <button name="btn">Subscribe</button>
         </form>
       </div>
     </section>

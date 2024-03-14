@@ -3,22 +3,29 @@ import toast, { Toaster } from "react-hot-toast";
 export const CartContainerContext = createContext();
 
 function CartContext({ children }) {
-  const [cartData, setCartData] = useState([]);
+  let [cartData, setCartData] = useState([]);
 
-  console.log(cartData);
-
-  // console.log(re);
+  let [productNumberInCart, setProductNumberInCart] = useState(0);
 
   function addToCart(product) {
-    let exit = cartData.find((pr) => {
-      return pr.id === product.id;
+    let exit = cartData.find((productInCart) => {
+      return productInCart.id === product.id;
     });
-    console.log(exit);
+
     if (exit) {
       toast.error("Product Already Exit In Cart");
     } else {
       setCartData([...cartData, { ...product, quantity: 1 }]);
-      console.log(cartData);
+      setProductNumberInCart((number) => (number += 1));
+      localStorage.setItem(
+        "productNumber",
+        JSON.stringify(
+          productNumberInCart
+            ? productNumberInCart + 1
+            : (productNumberInCart += 1)
+        )
+      );
+
       toast.success("Product Added To Cart");
     }
   }
@@ -27,7 +34,10 @@ function CartContext({ children }) {
     <CartContainerContext.Provider
       value={{
         cartData,
+        setCartData,
         addToCart,
+        setProductNumberInCart,
+        productNumberInCart,
       }}>
       {children}
       <Toaster />

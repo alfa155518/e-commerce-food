@@ -13,6 +13,7 @@ function FilterByPrice() {
         <form>
           <label htmlFor="range-element">
             <input
+              id="range-element"
               type="range"
               max={1000}
               step={10}

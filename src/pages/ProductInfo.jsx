@@ -188,16 +188,8 @@ function ProductInfo() {
           </aside>
         </section>
       ) : (
-        <h1
-          style={{
-            color: "green",
-            fontSize: "30px",
-            textAlign: "center",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}>
-          <Link to={"/"} style={{ color: "green" }}>
+        <h1 className="empty-section">
+          <Link to={"/"} aria-label="back to get product">
             <FaArrowAltCircleLeft />
           </Link>
           Product Info Empty

@@ -1,7 +1,7 @@
 @use "../helpers/variables" as *;
 @use "../helpers/mixins" as *;
 .home-page-slide {
-  background-image: url("../../images/home-page-slide-1.jpg");
+  background-image: url("../../images/blog-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -17,20 +17,21 @@
     position: relative;
     text-align: center;
     &::before {
-      @include pseudoElement(100%, 100%, #aaaaaa3b) {
+      @include pseudoElement(100%, 100%, rgb(49 45 45 / 23%)) {
         content: "";
         top: 0;
         z-index: -1;
       }
     }
     h1 {
-      color: #322b2b;
+      color: #ffc107;
       line-height: 2;
     }
     .offer {
-      color: #1e1a1a;
+      color: #ffc107;
       font-size: 20px;
       font-weight: 900;
+      margin-bottom: 20px;
     }
     form {
       width: 50%;

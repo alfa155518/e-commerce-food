@@ -7,8 +7,15 @@ function HomePageSLider() {
         <h1>Fresh Vegetables Big Discounts</h1>
         <span className="offer">Save up to 50% off on your first order</span>
         <form className="p-relative">
-          <input type="email" placeholder="Yor Email Address" />
-          <button className="subscribe p-absolute">Subscribe</button>
+          <input
+            type="email"
+            name="email"
+            placeholder="Yor Email Address"
+            autoComplete="email"
+          />
+          <button className="subscribe p-absolute" name="btn">
+            Subscribe
+          </button>
         </form>
       </article>
     </section>

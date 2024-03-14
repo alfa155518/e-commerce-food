@@ -52,6 +52,9 @@
             cursor: pointer;
             color: $mainColor;
             font-size: 17px;
+            a {
+              color: $mainColor;
+            }
             &::before {
               @include pseudoElement(2px, 20px, $mainColor) {
                 content: "";

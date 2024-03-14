@@ -61,6 +61,9 @@
   color: #3bb77e;
   font-size: 17px;
 }
+.famous-product .list-items .item .product .actions li a {
+  color: #3bb77e;
+}
 .famous-product .list-items .item .product .actions li::before {
   position: absolute;
   width: 2px;

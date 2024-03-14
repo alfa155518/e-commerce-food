@@ -8,22 +8,34 @@ function SecondNav() {
       <div className="btn-categories">Browse All Categories</div>
       <ul className="links">
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" aria-label="Back To home page">
+            Home
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about" aria-label="go to about page">
+            About
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/shop">Shop</NavLink>
+          <NavLink to="/shop" aria-label="go to shop page">
+            Shop
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/cart-page">Cart</NavLink>
+          <NavLink to="/cart-page" aria-label="go to cart page">
+            Cart
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/blog" aria-label="go to blog page">
+            Blog
+          </NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Contact-us</NavLink>
+          <NavLink to="/contact" aria-label="go to contact page">
+            Contact-us
+          </NavLink>
         </li>
       </ul>
       <div className="support">

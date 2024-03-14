@@ -47,6 +47,8 @@
   padding: 5px;
   margin: 5px;
   position: relative;
+  color: #3bb77e;
+  cursor: pointer;
 }
 .all-products .product .actions li a {
   cursor: pointer;

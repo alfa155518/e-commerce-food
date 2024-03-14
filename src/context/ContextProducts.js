@@ -43,6 +43,7 @@ function ContextProducts({ children }) {
     setData(filteredByPrice);
   }
 
+  // Show Info About Product
   function getProductInfo(product) {
     setProductInfo(product);
   }

@@ -1,0 +1,33 @@
+@use "../helpers/mixins" as *;
+@use "../helpers/variables" as *;
+.wrapper-blog {
+  .section-img {
+    padding-bottom: 20px;
+  }
+  .main-img {
+    background-image: url("../../images//blog-1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    margin-top: 30px;
+    &::before {
+      @include pseudoElement(100%, 100%, rgb(49 45 45 / 80%)) {
+        content: "";
+        top: 0;
+        z-index: -1;
+      }
+    }
+    h2 {
+      font-size: 50px;
+      letter-spacing: 1px;
+      color: $mainColor;
+    }
+  }
+}

@@ -11,6 +11,7 @@ import AllProductsContent from "../components/AllProductsContent";
 import FilterProductByPrice from "../components/FilterProductByPrice";
 import FilteredProducts from "../components/FiltredProducts";
 import "../sass/sections/popular-products.css";
+import ScrollToTop from "../components/ScrollToTop";
 function Shop() {
   const {
     data,
@@ -68,6 +69,7 @@ function Shop() {
         </div>
       </section>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
